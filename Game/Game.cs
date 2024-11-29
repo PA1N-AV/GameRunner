@@ -47,7 +47,7 @@ namespace Runer
             {
                 if (value == _score) return;
                 _score = value;
-                _scoreLabel.Content = _score;
+                _scoreLabel.Content ="Score: " + _score;
             }
         }
 

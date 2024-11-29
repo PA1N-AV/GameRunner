@@ -66,42 +66,42 @@ namespace Game
                     game.Move(new Runer.Offset(0, 0));
                     game.SimulateAndRender();
                 }
-                else if (e.Key == Key.NumPad7)
+                else if (e.Key == Key.NumPad7 || e.Key == Key.Q)
                 {
                     game.Move(new Runer.Offset(-1, -1));
                     game.SimulateAndRender();
                 }
-                else if (e.Key == Key.NumPad8)
+                else if (e.Key == Key.NumPad8 || e.Key == Key.W)
                 {
                     game.Move(new Runer.Offset(0, -1));
                     game.SimulateAndRender();
                 }
-                else if (e.Key == Key.NumPad9)
+                else if (e.Key == Key.NumPad9 || e.Key == Key.E)
                 {
                     game.Move(new Runer.Offset(1, -1));
                     game.SimulateAndRender();
                 }
-                else if (e.Key == Key.NumPad4)
+                else if (e.Key == Key.NumPad4 || e.Key == Key.A)
                 {
                     game.Move(new Runer.Offset(-1, 0));
                     game.SimulateAndRender();
                 }
-                else if (e.Key == Key.NumPad6)
+                else if (e.Key == Key.NumPad6 || e.Key == Key.D)
                 {
                     game.Move(new Runer.Offset(1, 0));
                     game.SimulateAndRender();
                 }
-                else if (e.Key == Key.NumPad1)
+                else if (e.Key == Key.NumPad1 || e.Key == Key.Z)
                 {
                     game.Move(new Runer.Offset(-1, 1));
                     game.SimulateAndRender();
                 }
-                else if (e.Key == Key.NumPad2)
+                else if (e.Key == Key.NumPad2 || e.Key == Key.X)
                 {
                     game.Move(new Runer.Offset(0, 1));
                     game.SimulateAndRender();
                 }
-                else if (e.Key == Key.NumPad3)
+                else if (e.Key == Key.NumPad3 || e.Key == Key.C)
                 {
                     game.Move(new Runer.Offset(1, 1));
                     game.SimulateAndRender();

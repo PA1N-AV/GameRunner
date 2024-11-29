@@ -7,11 +7,13 @@
         mc:Ignorable="d"
         Title="Game" Height="600" Width="550" Background="Black" KeyUp="Window_KeyUp" WindowStartupLocation="CenterScreen">
 
+    
     <Window.Resources>
         <Style x:Key="Border">
             <Setter Property="Border.Background" Value="White"/>
             <Setter Property="Border.CornerRadius" Value="5"/>
         </Style>
+        <FontFamily x:Key="FontKey">pack://application:,,,/Fonts/FeatureMono-Medium.ttf</FontFamily>
     </Window.Resources>
     <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
         <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
@@ -25,16 +27,23 @@
                 <Button Focusable="False" Background="Black" Foreground="White" BorderThickness="2" BorderBrush="Aqua" Click="Button_Click">
                     Restart
                 </Button>
-                <Label x:Name="scoreLabel" Content="0" Foreground="White"/>
+                <Label x:Name="scoreLabel" Content="Score: 0" Foreground="White"/>
                 <Border Style="{StaticResource ResourceKey=Border}" HorizontalAlignment="Center" VerticalAlignment="Center">
                     <Grid x:Name="GridGameField">
 
                     </Grid>
                 </Border>
             </StackPanel>
-            <Border x:Name="DeathMessageBorder" Width="300" Height="150" BorderThickness="4" BorderBrush="DarkRed" CornerRadius="5"  Background="White">
+            <Border x:Name="DeathMessageBorder" BorderThickness="5">
                 <Grid>
-                    <Label FontSize="32" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="0" Content="Game Lost"/>
+                    <Label FontSize="68" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="0" Content="Game Lost" FontFamily="Verdana Pro Black">
+                        <Label.Foreground>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                <GradientStop Color="DarkBlue" Offset="0.0" />
+                                <GradientStop Color="DarkSlateBlue" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Label.Foreground>
+                    </Label>
                 </Grid>
             </Border>
         </Grid>
